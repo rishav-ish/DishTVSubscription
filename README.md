@@ -6,4 +6,4 @@ It is implemented with the help of file
 
 Mainly collection, io package of java get used in this code since these were the boundedness implemented by my college for doing the project.
 
-![alt text](https://github.com/rishav-ish/DishTVSubscription/TV.png)
+![Screen Shot](https://github.com/rishav-ish/DishTVSubscription/blob/master/TV.png)
