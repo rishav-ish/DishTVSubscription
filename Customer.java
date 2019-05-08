@@ -152,6 +152,7 @@ public class Customer{
 		
 		try{
 			choice = input.nextInt();
+			String garbage = input.nextLine();
 		}catch(InputMismatchException iex){
 			choice = -1;
 		}catch(NoSuchElementException ex){
@@ -210,6 +211,7 @@ public class Customer{
 		try{
 			
 			size = input.nextInt();
+			String garbage = input.nextLine();            //to hold anything extra putten by user...
 			
 		}catch(InputMismatchException ie){
 			System.out.println("\n***Please ensure following while giving inputs***");
@@ -257,6 +259,8 @@ public class Customer{
 					break;
 				}
 			}
+			
+			String garbage = input.nextLine();
 			
 			subscribe.addAll(sub);
 			
@@ -364,6 +368,7 @@ public class Customer{
 		try{
 			
 			size = input.nextInt();
+			String garbage = input.nextLine();              //to hold any thing extra putten by user...
 			
 		}catch(InputMismatchException ie){
 			System.out.println("\n***Please ensure following while giving inputs***");
@@ -407,6 +412,9 @@ public class Customer{
 		
 			
 			}
+			
+			String garbage = input.nextLine();
+			
 		}catch(InputMismatchException ie){
 			System.out.println("\n***Please ensure following while giving inputs***");
 			System.out.println("1.You should enter the integer according to the index and press enter");
