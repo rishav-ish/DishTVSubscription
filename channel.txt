@@ -1,0 +1,38 @@
+Star plus,18
+Life Ok,21
+Zee Cinema,13
+Zee Clasic,10
+Star Gold,17
+Fox Traveller,4
+Zee TV,13
+Zee News,8
+HBO,16
+CNN,1
+NatGeo Wild,16
+9X,20
+NDTV Profit,6
+Cartoon Network,13
+Pogo,13
+Star Movies,17
+Star Cricket,29
+Star Sports,35
+SET,21
+Discovery,16
+Animal Planet,5
+Sony TV,26
+SAB,14
+Aaj Tak,7
+Tez,2
+Discovery Science,12
+Colors,21
+CNBC Awaaz,4
+MTV,7
+Nick,6
+Hungama TV,8
+History,16
+Times Now,9
+Zing,5
+Zee Talkies,16
+Star Parvah,13
+ABC News,22
+Marvel TV,28
