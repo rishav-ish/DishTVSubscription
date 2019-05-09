@@ -145,7 +145,8 @@ public class Customer{
 		System.out.println("\n1.Choose Channels");
 		System.out.println("2.Show subscribe channels");
 		System.out.println("3.Remove subscribe channels");
-		System.out.println("4.exit");
+		System.out.println("4.Log out");
+		//System.out.println("5.exit");
 		System.out.print("\nYour choice ");
 		
 		int choice = -1; // = input.nextInt();
@@ -177,7 +178,10 @@ public class Customer{
 				break;
 				
 			case 4:
-				System.exit(0);
+				return;
+				
+			/* case 5:
+				System.exit(0); */
 				
 			default:
 				System.out.println("\nPlease enter your choice wisely\n");
@@ -187,6 +191,7 @@ public class Customer{
 		System.out.println("\n\nPlease press enter...");
 		
 		System.in.read();
+		String garbage = input.nextLine();
 		input = null;
 		input = new Scanner(System.in);
 				

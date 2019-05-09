@@ -56,14 +56,16 @@ public class Welcome{
 		System.out.println("\nPlease enter your choice...");
 		System.out.println("1.Login");
 		System.out.println("2.SignUp");
-		System.out.println("3.Channel Catalogue");
-		System.out.println("4.exit");
+		System.out.println("3.Admin Login");
+		System.out.println("4.Channel Catalogue");
+		System.out.println("5.exit");
 		System.out.println("Enter your choice ");
 		
 		int choice = -1;
 		
 		try{
 			 choice = scan.nextInt();
+			 String garbage = scan.nextLine();
 		}catch(InputMismatchException ime){
 			  choice = -1;
 		}catch(NoSuchElementException ex){
@@ -85,6 +87,8 @@ public class Welcome{
 				if(c.login(mob,password)){
 					showBanner();
 					c.display();
+					c = null;                         //let garbage collector do their work.....
+					continue;
 				}
 			
 				break;
@@ -95,11 +99,18 @@ public class Welcome{
 				if(c1.createUser()){
 					showBanner();
 					c1.display();
+					c1 = null;
+					continue;
 				}
 			
 				break;
 				
 			case 3:
+				
+				System.out.println("Currently out of service, sorry for inconvenience");
+				break;
+				
+			case 4:
 				chan = new Channel();
 				showBanner();
 				chan.catalogue();
@@ -108,7 +119,7 @@ public class Welcome{
 				
 				break;
 				
-			case 4:
+			case 5:
 				System.exit(0);
 				
 			default:
@@ -119,6 +130,8 @@ public class Welcome{
 		
 				System.out.println("\n\nPlease press enter to go back");
 				System.in.read();
+				
+				String garbage = scan.nextLine();
 				
 				scan = null;
 				scan = new Scanner(System.in);
